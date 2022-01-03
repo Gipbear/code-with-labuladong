@@ -45,7 +45,7 @@ public:
         // 等于1时说明之前已经存在过了，
         // 而且之后还有的重复的也只计算一次
         if(memo[subTree] == 1){
-            res.push_back(root);
+            res.emplace_back(root);
         }
         memo[subTree]++;
 

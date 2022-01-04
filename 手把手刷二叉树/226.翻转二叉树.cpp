@@ -4,6 +4,7 @@
  * [226] 翻转二叉树
  */
 
+// Definition for a Node.
 struct TreeNode {
     int val;
     TreeNode *left;

@@ -20,9 +20,7 @@ public:
         for(int i = 1; i < row+1; i++){
             for(int j = 1; j < col+1; j++){
                 this->prematrix[i][j] = matrix[i-1][j-1] + this->prematrix[i-1][j] + this->prematrix[i][j-1] - this->prematrix[i-1][j-1];
-                // cout<<this->prematrix[i][j]<<" ";
             }
-            // cout<<endl;
         }
     }
     

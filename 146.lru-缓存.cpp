@@ -115,11 +115,15 @@ public:
     }
     
     void put(int key, int value) {
+        // 已经存在
         if(this->map.count(key)){
+            // 删除key
             this->deleteKey(key);
+            // 增加key, 来更新value
             this->addRecently(key, value);
             return ;
         }
+        // 空间满了, 则先删除最久未使用
         if(this->cap == this->cache->getsize()){
             this->removeLeastRecently();
         }

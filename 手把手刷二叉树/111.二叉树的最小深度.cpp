@@ -21,13 +21,12 @@ struct TreeNode {
 };
 
 // @lc code=start
-
 class Solution {
 public:
     int minDepth(TreeNode* root) {
-        // base case
         if(root == nullptr)
             return 0;
+        // 记录每层的所有结点
         queue<TreeNode*> q;
         q.push(root);
         int depth = 1;

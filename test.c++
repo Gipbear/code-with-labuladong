@@ -3,15 +3,8 @@ using namespace std;
 
 
 int main(){
-    int num1 = 333, num2 = 1110;
-    int cnt = 0;
-    while(num1 != 0 && num2 != 0){
-        if(num1 > num2)
-            num1 -= num2;
-        else
-            num2 -= num1;
-        cnt++;
-    }
-    cout<<cnt;
+    int x=4, y=25, z=2;
+    z=(--y/++x)*z--;
+    cout<<z<<endl;
     return 1;
 }

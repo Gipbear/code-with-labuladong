@@ -3,8 +3,12 @@ using namespace std;
 
 
 int main(){
-    int x=4, y=25, z=2;
-    z=(--y/++x)*z--;
-    cout<<z<<endl;
+    float a = 1.0, b = 1.1;
+    if(a -int(a) == 0){
+        cout<<"hhh"<<endl;
+    }
+    if(b -int (b) == 0){
+        cout<<"lll"<<endl;
+    }
     return 1;
 }

@@ -6,5 +6,6 @@
 * **算法入门**中是根据 leetcode 的算法入门模块学习的；
   * 加入了**贝壳**模块
   * 加入天池系列
+  * 2022年3月5日起, 改用 python 解题
 
 代码使用[leetcode](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)插件在VS Code中编写。

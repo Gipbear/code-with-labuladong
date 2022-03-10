@@ -1,15 +1,24 @@
-import time
-from multiprocessing import Pool
 
-def func(x):
-    time.sleep(2)
-    print(x**2, end=' | ')
-    return x**2
+def longPre(words):
+    res = ""
+    ind = 0
+    flag = False
+    while ind < len(words[0]):
+        tmp = words[0][ind]
+        for word in words:
+            if word[ind] != tmp:
+                flag = True
+                break
+        if flag:
+            break
+        else:
+            res += tmp
+            ind += 1
+    return res
+
 
 if __name__ == '__main__':
-    start_time = time.time()
-    with Pool(5) as p:
-        p.map(func, [i for i in range(10)])
-    # list(map(func, [i for i in range(10)]))
-    end_time = time.time()
-    print(f"\n一共耗时{end_time-start_time}")
+    words = input().split(',')
+    res = longPre(words)
+    print(res)
+
